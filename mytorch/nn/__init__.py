@@ -15,6 +15,7 @@ from .rnn_cell import RNNCell
 from .gru_cell import GRUCell
 from .ctc import CTC, CTCLoss
 from .ctc_decode import GreedySearchDecoder, BeamSearchDecoder
+from .attention import ScaledDotProductAttention, MultiHeadAttention
 
 __all__ = [
     "Identity", "Sigmoid", "Tanh", "ReLU", "GELU", "Softmax",
@@ -24,4 +25,5 @@ __all__ = [
     "MaxPool2d_stride1", "MeanPool2d_stride1", "MaxPool2d", "MeanPool2d",
     "RNNCell", "GRUCell", "CTC", "CTCLoss",
     "GreedySearchDecoder", "BeamSearchDecoder",
+    "ScaledDotProductAttention", "MultiHeadAttention",
 ]

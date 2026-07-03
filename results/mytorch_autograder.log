@@ -1,0 +1,39 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.2, pytest-9.1.1, pluggy-1.6.0 -- D:\Project\_csdiy\.venv-ml\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Project\deep-learning\cmu11785-idl
+plugins: anyio-4.14.1
+collecting ... collected 30 items
+
+tests/test_hw1_mlp.py::test_activation_forward_backward[Sigmoid-sigmoid] PASSED [  3%]
+tests/test_hw1_mlp.py::test_activation_forward_backward[Tanh-tanh] PASSED [  6%]
+tests/test_hw1_mlp.py::test_activation_forward_backward[ReLU-relu] PASSED [ 10%]
+tests/test_hw1_mlp.py::test_activation_forward_backward[Identity-<lambda>] PASSED [ 13%]
+tests/test_hw1_mlp.py::test_linear_forward_backward PASSED               [ 16%]
+tests/test_hw1_mlp.py::test_mse_loss PASSED                              [ 20%]
+tests/test_hw1_mlp.py::test_cross_entropy_loss PASSED                    [ 23%]
+tests/test_hw1_mlp.py::test_batchnorm_train_forward_backward PASSED      [ 26%]
+tests/test_hw1_mlp.py::test_batchnorm_eval_uses_running_stats PASSED     [ 30%]
+tests/test_hw1_mlp.py::test_mlp4_end_to_end_grads PASSED                 [ 33%]
+tests/test_hw1_mlp.py::test_sgd_step_reduces_loss PASSED                 [ 36%]
+tests/test_hw2_cnn.py::test_upsample1d_downsample1d_inverse PASSED       [ 40%]
+tests/test_hw2_cnn.py::test_conv1d_stride1_vs_torch PASSED               [ 43%]
+tests/test_hw2_cnn.py::test_conv1d_strided_vs_torch PASSED               [ 46%]
+tests/test_hw2_cnn.py::test_conv2d_stride1_vs_torch PASSED               [ 50%]
+tests/test_hw2_cnn.py::test_conv2d_strided_padded_vs_torch PASSED        [ 53%]
+tests/test_hw2_cnn.py::test_maxpool2d_vs_torch PASSED                    [ 56%]
+tests/test_hw2_cnn.py::test_meanpool2d_vs_torch PASSED                   [ 60%]
+tests/test_hw2_cnn.py::test_flatten_roundtrip PASSED                     [ 63%]
+tests/test_hw3_rnn_ctc.py::test_rnncell_forward_vs_torch PASSED          [ 66%]
+tests/test_hw3_rnn_ctc.py::test_grucell_forward_vs_torch PASSED          [ 70%]
+tests/test_hw3_rnn_ctc.py::test_grucell_backward_gradcheck PASSED        [ 73%]
+tests/test_hw3_rnn_ctc.py::test_ctc_loss_vs_torch PASSED                 [ 76%]
+tests/test_hw3_rnn_ctc.py::test_ctc_backward_gradcheck PASSED            [ 80%]
+tests/test_hw3_rnn_ctc.py::test_greedy_decode PASSED                     [ 83%]
+tests/test_hw3_rnn_ctc.py::test_beam_decode_matches_greedy_on_peaky PASSED [ 86%]
+tests/test_hw4_attention.py::test_scaled_dot_product_forward_vs_torch PASSED [ 90%]
+tests/test_hw4_attention.py::test_scaled_dot_product_causal_mask PASSED  [ 93%]
+tests/test_hw4_attention.py::test_scaled_dot_product_backward_gradcheck PASSED [ 96%]
+tests/test_hw4_attention.py::test_multihead_forward_vs_torch PASSED      [100%]
+
+============================= 30 passed in 28.36s =============================
