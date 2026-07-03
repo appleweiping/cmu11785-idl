@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Data caches & downloaded datasets (fetched at runtime, never committed)
+data/*
+!data/.gitkeep
+!data/README.md
+
+# Large / generated binaries
+*.pt
+*.pth
+*.npz
+*.ckpt
+
+# OS
+.DS_Store
+Thumbs.db
