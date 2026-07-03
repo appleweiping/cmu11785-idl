@@ -36,4 +36,4 @@ tests/test_hw4_attention.py::test_scaled_dot_product_causal_mask PASSED  [ 93%]
 tests/test_hw4_attention.py::test_scaled_dot_product_backward_gradcheck PASSED [ 96%]
 tests/test_hw4_attention.py::test_multihead_forward_vs_torch PASSED      [100%]
 
-============================= 30 passed in 28.36s =============================
+============================= 30 passed in 11.84s =============================
