@@ -1,0 +1,11 @@
+# Core (MyTorch Part 1 is pure NumPy)
+numpy>=1.24
+
+# Part 2 training pipelines + verification tests
+torch>=2.0            # reference gradients in tests; Part 2 encoders (CPU build is fine)
+scikit-learn>=1.3     # real public datasets (ISOLET, LFW) + metrics/preprocessing
+matplotlib>=3.7       # learning-curve / result figures
+pandas>=1.5           # OpenML fetch dependency for scikit-learn
+
+# Test / autograder harness
+pytest>=7.0
